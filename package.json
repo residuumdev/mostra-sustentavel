@@ -1,0 +1,44 @@
+{
+  "name": "sg-residuum-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "json-server": "npx json-server server.json --watch --port 8888"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "@sweetalert2/theme-material-ui": "^5.0.16",
+    "apexcharts": "^3.46.0",
+    "axios": "^1.6.7",
+    "flowbite": "^2.3.0",
+    "flowbite-react": "^0.7.2",
+    "json-server": "^1.0.0-alpha.23",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.4",
+    "react-icons": "^5.0.1",
+    "react-query": "^3.39.3",
+    "sweetalert2": "^11.10.5",
+    "sweetalert2-react-content": "^5.0.7",
+    "tailwind-merge": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

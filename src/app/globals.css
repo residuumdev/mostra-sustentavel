@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@sweetalert2/theme-material-ui/material-ui.css";
+
+:root {
+  /* Paleta Residuum */
+  --cor-azul: #002266;
+  --cor-verde: #64a23d;
+  --cor-cinza: #585c5e;
+  --cor-laranja: #ff4a00;
+  --cor-branco: #ffffff;
+  --cor-preto: #000000;
+
+  /* Paleta coleta seletiva */
+  --cor--reciclavel-azul: #0000ff; /* Azul: papel/papelão */
+  --cor--reciclavel-vermelho: #ff0000; /* Vermelho: plástico */
+  --cor-reciclavel-verde: #00ff00; /* Verde: vidro */
+  --cor-reciclavel-amarelo: #ffff00; /* Amarelo: metal */
+  --cor-reciclavel-marrom: #a52a2a; /* Marrom: orgânico */
+  --cor-reciclavel-cinza: #808080; /* Cinza: não reciclável */
+  --cor-reciclavel-preto: #000000; /* Preto: madeira */
+  --cor-reciclavel-laranja: #ff7f00; /* Laranja: resíduos perigosos */
+  --cor-reciclavel-branco: #ffffff; /* Branco: resíduos ambulatoriais e de serviços de saúde*/
+  --cor-reciclavel-roxo: #800080; /* Roxo: resíduos radioativos*/
+
+  /*
+      // Proporção de contraste das cores usando texto branco
+      
+      // cor de fundo branco com texto preto   = 21 : 1           = APROVADO
+      // cor de fundo branco com texto azul    = 14,78 : 1        = APROVADO
+      // cor de fundo branco com texto cinza   = 6,76 : 1         = APROVADO
+      // cor de fundo branco com texto laranja = 3,37 : 1          = REPROVADO
+      // cor de fundo branco com texto verde = 3,1 : 1           = REPROVADO
+      
+      //  Cor de fundo azul com texto branco     = 14,78 : 1      = APROVADO
+      //  Cor de fundo azul com texto preto      = 1,42 : 1        = REPROVADO
+      
+      //  Cor de fundo verde com texto preto     = 6,78 : 1       = APROVADO
+      //  Cor de fundo verde com texto branco    = 3,1 : 1         = REPROVADO
+      
+      //  Cor de fundo cinza com texto branco    = 6,76 : 1       = APROVADO
+      //  Cor de fundo cinza com texto preto     = 3,11 : 1        = REPROVADO
+      
+      //  Cor de fundo laranja com texto preto   = 6,23 : 1       = APROVADO
+      //  Cor de fundo laranja com texto branco  = 3,37 : 1       = REPROVADO
+      
+      // Não testei com preto pois nunca usamos o preto como plano de fundo, teriamos que adicionar uma cor a paleta.
+    */
+}
