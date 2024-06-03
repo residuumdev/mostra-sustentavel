@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { pages } from "next/dist/build/templates/app-page";
 import { FloatingLabel } from "flowbite-react";
 import { useEffect } from 'react';
+import { Toaster, toast } from 'sonner';
 
 type Inputs = {
     papel: number,
@@ -34,9 +35,13 @@ export default function Component() {
   
   function HandleForm (data: Inputs) {
     if(typeof window !== 'undefined'){
-      console.log(data);
-      localStorage.setItem("dados_descarte", JSON.stringify(data));
-      router.push("/ponto-coleta/termos")
+      if(!data.papel && !data.metal && !data.plastico && !data.vidro) {
+        console.log("")
+        toast.error("Insira pelo menos um item para ser reciclado")   
+      } else {
+        localStorage.setItem("dados_descarte", JSON.stringify(data));
+        router.push("/ponto-coleta/termos")
+      }
     }
   }
 

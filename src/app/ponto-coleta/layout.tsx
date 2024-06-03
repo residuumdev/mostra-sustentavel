@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import PontoHeader from "./components/header";
 import PontoFooter from "./components/footer";
+import { Toaster, toast } from 'sonner';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
       <>
+      <Toaster richColors  />
       <PontoHeader/>
         <div className="flex h-screen grid justify-items-center">
       <div className="">

@@ -1,3 +1,16 @@
 {
-  "coletas": []
+  "coletas": [
+    {
+      "id": "a243",
+      "dados_descartante": "1",
+      "dados_descarte": {
+        "papel": "",
+        "metal": "",
+        "vidro": "",
+        "plastico": ""
+      },
+      "aceitou_termos": "true",
+      "ponto_coleta_id": 1
+    }
+  ]
 }
