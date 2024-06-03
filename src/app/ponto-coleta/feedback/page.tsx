@@ -35,7 +35,7 @@ export default function FeedbackPonto() {
     
     const fetchData = async () => {
       try {
-        await fetch('http://localhost:8888/coletas', {
+        await fetch('https://mostra-sustentavel-residuums-projects.vercel.app/ponto-coleta/coletas', {
           method: 'POST',
           body : JSON.stringify(
             localData
