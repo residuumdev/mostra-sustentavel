@@ -1,6 +1,7 @@
 "use client";
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation'
 
 
@@ -11,22 +12,30 @@ type Inputs = {
 
 export default function TermosPonto() {
 
-  const router = useRouter();
-  function saveTerms() {
-    localStorage.setItem("aceitou_termos","true");
-    router.replace("/ponto-coleta/feedback")
-  }
 
-  function nextPage() {
-    localStorage.setItem("aceitou_termos","false");
-    router.push("/ponto-coleta/feedback")
-  }
-
+  useEffect(() => {
   // check dados tela anterior
   const currentStep = localStorage.getItem("dados_descarte");
   if (!currentStep) {
     router.replace("/ponto-coleta");
     return
+  }
+  },[]);
+
+  const router = useRouter();
+  function saveTerms() {
+    if(typeof window !== 'undefined'){
+      localStorage.setItem("aceitou_termos","true");
+      router.replace("/ponto-coleta/feedback")
+    }
+  }
+
+  function nextPage() {
+    if(typeof window !== 'undefined'){
+      // now access your localStorage
+      localStorage.setItem("aceitou_termos","false");
+      router.push("/ponto-coleta/feedback")
+    }
   }
 
   return (

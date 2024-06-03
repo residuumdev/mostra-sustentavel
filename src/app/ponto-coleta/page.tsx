@@ -16,21 +16,27 @@ export default function HomeComponent() {
   } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log(data);
-    var to_storage = {telefone:data.telefone}
-    localStorage.setItem("dados_descartante", JSON.stringify(to_storage));
+    if(typeof window !== 'undefined'){
+      console.log(data);
+      var to_storage = {telefone:data.telefone}
+      localStorage.setItem("dados_descartante", JSON.stringify(to_storage));
+    }
+
     router.push("/ponto-coleta/descarte")
-    
   };
 
   function getData() {
-    const coleta_telefone = localStorage.getItem("dados_descartante");
-    if (coleta_telefone != null) {
-        console.log(coleta_telefone)
-        const data = JSON.parse(coleta_telefone)
-        return data.telefone;
+    if(typeof window !== 'undefined'){
+      const coleta_telefone = localStorage.getItem("dados_descartante");
+      if (coleta_telefone != null) {
+          console.log(coleta_telefone)
+          const data = JSON.parse(coleta_telefone)
+          return data.telefone;
+      }
     }
   }
+
+
   return (
  <>
         <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">

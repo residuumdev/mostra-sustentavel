@@ -4,6 +4,7 @@ import { Label, TextInput } from "flowbite-react";
 import { useRouter } from "next/navigation";
 import { pages } from "next/dist/build/templates/app-page";
 import { FloatingLabel } from "flowbite-react";
+import { useEffect } from 'react';
 
 type Inputs = {
     papel: number,
@@ -19,20 +20,26 @@ export default function Component() {
     reset,
     handleSubmit,
     formState: { errors },
-  } = useForm<Inputs>();   
-
+  } = useForm<Inputs>();  
+  
+  
+  useEffect(() => {
+    // check dados tela anterior
+    const currentStep = localStorage.getItem("dados_descartante");
+    if (!currentStep) {
+      router.replace("/ponto-coleta");
+      return
+    }
+    },[]);
+  
   function HandleForm (data: Inputs) {
-    console.log(data);
-    localStorage.setItem("dados_descarte", JSON.stringify(data));
-    router.push("/ponto-coleta/termos")
+    if(typeof window !== 'undefined'){
+      console.log(data);
+      localStorage.setItem("dados_descarte", JSON.stringify(data));
+      router.push("/ponto-coleta/termos")
+    }
   }
 
-  // check dados tela anterior
-  const currentStep = localStorage.getItem("dados_descartante");
-  if (!currentStep) {
-    router.replace("/ponto-coleta");
-    return
-  }
 
   return (
 <div className="">
