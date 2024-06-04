@@ -1,77 +1,84 @@
 "use client";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react"
+import axios from "axios";
 
-
-export default function FeedbackPonto() {
+export default function Feedback() {
   const router = useRouter();
-  const [data, setData] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
-// check dados pagina anterior
-  const currentStep = localStorage.getItem("aceitou_termos");
-  if (!currentStep) {
-    router.replace("/ponto-coleta");
-    return
-  }
+    const telefone = localStorage.getItem("dados_descartante");
+    const dados_descarte = localStorage.getItem("dados_descarte");
+    const aceitou_termos = localStorage.getItem("aceitou_termos");
 
-    const foo = localStorage.getItem("aceitou_termos");
-    if(foo != null) {
-      if(foo == "true") {
-        setData("Você está concorrendo e desejamos boa sorte! Se você for o vencedor, a nossa equipe entrará em contato com você pelo número de telefone que você cadastrou.")
-      } 
+    if (!telefone || !dados_descarte || aceitou_termos === null) {
+      router.replace("/ponto-coleta");
+      return;
     }
 
-    const dados_descartante = JSON.parse(localStorage.getItem("dados_descartante") || "{}")
-    const aceitou_termos = localStorage.getItem("aceitou_termos")
-  
-    // pegar os dados do local storage
-    const localData = {
-      dados_descartante: dados_descartante.telefone,
-      dados_descarte: JSON.parse(localStorage.getItem("dados_descarte") || "{}"),
-      aceitou_termos: aceitou_termos,
-      ponto_coleta_id: 1
-    }
-    
-    const fetchData = async () => {
-      try {
-        await fetch('http://localhost:8888/coletas', {
-          method: 'POST',
-          body : JSON.stringify(
-            localData
-          )
-        })
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
+    const telefoneParsed = JSON.parse(telefone).telefone;
+    const dadosParsed = JSON.parse(dados_descarte);
+    const termosParsed = aceitou_termos === "true";
+
+    const data = {
+      telefone: telefoneParsed,
+      ...dadosParsed,
+      aceitou_termos: termosParsed,
+      Created: 'x-sheetmonkey-current-date-time'
     };
 
-    fetchData()
-  
-    const timer = setTimeout(() => {
-      localStorage.clear();
-      router.replace('/ponto-coleta');
-    }, 3000);
-    
-    return () => clearTimeout(timer);
-  }, [])
+    axios
+      .post("https://api.sheetmonkey.io/form/qiYSNzwERRJEutYCC7udk4", data)
+      .then((response) => {
+        if (response.status === 200) {
+          localStorage.clear();
+          setMessage(
+            termosParsed
+              ? "Obrigado por aceitar os termos e realizar o descarte de resíduos!"
+              : "Você não aceitou os termos, mas seus dados de descarte foram registrados.",
+          );
+        } else {
+          setMessage(
+            "Ocorreu um erro ao registrar seus dados. Por favor, tente novamente.",
+          );
+        }
+      })
+      .catch(() => {
+        setMessage(
+          "Ocorreu um erro ao registrar seus dados. Por favor, tente novamente.",
+        );
+      });
+  }, [router]);
 
-    return(
-<div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-    <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-  </a>
-  <div className="p-5">
-    <a href="#">
-      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-      Parabéns!
-      </h5>
-    </a>
-    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">    
-      {data ? data : "Você destinou seu resíduo de forma correta!"}
-    </p>
-  </div>
-</div>
+  const returnHome = () => {
+    router.push("/ponto-coleta");
+  };
 
-    )
+  return (
+    <>
+      <form
+        action="https://api.sheetmonkey.io/form/vB1pUYCBvUqnSarEvAgsd6"
+        method="post"
+      >
+        <input
+          type="hidden"
+          name="Created"
+          value="x-sheetmonkey-current-date-time"
+        />
+      </form>
+
+      <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+          {message}
+        </h2>
+        <button
+          onClick={returnHome}
+          className="group relative mb-8 mt-4 flex w-full justify-center rounded-md border border-transparent bg-[#64a23d] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
+        >
+          Voltar ao início
+        </button>
+      </div>
+    </>
+  );
 }

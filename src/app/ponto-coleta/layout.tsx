@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import PontoHeader from "./components/header";
 import PontoFooter from "./components/footer";
-import { Toaster, toast } from 'sonner';
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,15 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <>
-      <Toaster richColors  />
-      <PontoHeader/>
-        <div className="flex h-screen grid justify-items-center">
-      <div className="">
-          {children}
-        </div>
-        </div>
-        <PontoFooter/>
-        </>
+    <>
+      <Toaster richColors />
+      <PontoHeader />
+      <div className="flex grid h-screen justify-items-center">
+        <div className="">{children}</div>
+      </div>
+      <PontoFooter />
+    </>
   );
 }
