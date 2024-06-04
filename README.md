@@ -39,3 +39,5 @@ Sempre que você subir um commit, use commit semântico, exemplos:
 - style: Usado quando são feitas alterações que não afetam o significado do código (espaços em branco, formatação, ponto e vírgula faltando, etc).
 - test: Usado quando adicionar testes ausentes ou corrigir testes existentes.
 - revert: Usado quando você reverte um commit anterior.
+
+deploy
