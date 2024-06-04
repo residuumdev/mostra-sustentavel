@@ -41,7 +41,7 @@ export default function TermosPonto() {
   return (
     <>
       <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
-        Para realizar o descarte, insira seu número de telefone no primeiro campo e após informe os resíduos que está descartando, clicando nos botões dos respectivos resíduos que você tiver para descartar. (Texto será alterado).
+      Precisamos da sua autorização para entrar em contato com você, por favor leia o termo de consentimento e as regras da campanha.
       </div>
       <div className="mx-auto max-w-2xl px-4 py-2 lg:py-16">
         <textarea
@@ -89,94 +89,94 @@ export default function TermosPonto() {
           vencedor(es) em um sorteio aleatório de todas as inscrições recebidas. As chances de
           ser selecionado dependem do número de entradas recebidas.
           Notificação e Requisitos de Vencedores em Potencial: o Patrocinador tentará
-notificar o vencedor em potencial dentro de cinco (5) dias úteis após o sorteio por
-e-mail/telefone. Se um vencedor em potencial não responder dentro de sete (7) dias
-corridos após o envio do aviso, o Patrocinador selecionará um vencedor em potencial
-alternativo em seu lugar aleatoriamente entre todas as inscrições restantes recebidas.
-Apenas três (3) vencedores potenciais alternativos serão contatados.
-Prêmio(s): XXXXXXXXXXXXXXXXXXXXXXXXX
-Descrição dos prêmios: XXXXXXXXXXXXXXXXXX
-Condições Gerais: Caso a operação, segurança ou administração do Sorteio seja
-prejudicada de alguma forma por qualquer motivo, incluindo, entre outros, fraude, vírus
-ou outro problema técnico, O Patrocinador pode, a seu exclusivo critério,: (a)
-suspender o Sorteio para resolver a deficiência e, em seguida, retomar o Sorteio da
-maneira que melhor se adequar ao espírito destas Regras Oficiais; ou (b) atribuir o(s)
-prêmio(s) aleatoriamente entre as inscrições elegíveis recebidas até o momento da
-deficiência. O Patrocinador reserva-se o direito, a seu exclusivo critério, de
-desqualificar qualquer indivíduo que considere estar adulterando o processo de
-inscrição ou a operação do Sorteio ou agindo em violação destas Regras Oficiais ou
-de maneira antidesportiva ou perturbadora. Qualquer tentativa de qualquer pessoa de
-prejudicar a operação legítima do Sorteio pode ser uma violação da lei criminal e civil
-e, caso tal tentativa seja feita, o Patrocinador reserva-se o direito de buscar
-indenização de tal pessoa na medida máxima permitida por lei. A falha do
-Patrocinador em fazer cumprir qualquer termo destas Regras Oficiais não constituirá
-uma renúncia a essa disposição. A prova de envio de qualquer comunicação ao
-Patrocinador por correio não será considerada prova de recebimento dessa
-comunicação pelo Patrocinador. No caso de uma disputa sobre qualquer entrada
-online, o titular da conta autorizada do endereço de e-mail usado para entrar será
-considerado o participante. O “titular autorizado da conta” é a pessoa física a quem é
-atribuído um endereço de e-mail por um provedor de acesso à Internet, provedor de
-serviços online ou outra organização responsável pela atribuição de endereços de
-e-mail para o domínio associado ao endereço de e-mail enviado.
-Liberação e Limitações de Responsabilidade: Ao participar do Sorteio, você
-concorda em isentar e isentar o Patrocinador, sua controladora, subsidiárias, afiliadas,
-os provedores de prêmios e cada um de seus respectivos executivos, diretores,
-funcionários , e agentes (as “Partes Liberadas”) de e contra qualquer reivindicação ou
-causa de ação decorrente da participação no Sorteio ou recebimento ou uso de
-qualquer prêmio, incluindo, mas não limitado a: (a) intervenção humana não
-autorizada no Sorteio; (b) erros técnicos relacionados a computadores, servidores,
-provedores ou linhas telefônicas ou de rede; (c) erros de impressão; (d)
-correspondência perdida, atrasada, com postagem vencida, extraviada ou impossível
-de entregar; (e) erros na administração do Sorteio ou no processamento das
-inscrições; ou (f) lesões ou danos a pessoas ou bens que possam ser causados, direta
-ou indiretamente, no todo ou em parte, pela participação do participante no Sorteio ou
-pelo recebimento ou uso de qualquer prêmio. Você também concorda que, em
-qualquer causa de ação, a responsabilidade das Partes Isentas será limitada ao custo
-de inscrição e participação no Sorteio e, em nenhum caso, as Partes Isentas serão
-responsáveis por honorários advocatícios. Você renuncia ao direito de reivindicar
-quaisquer danos, incluindo, mas não limitado a danos punitivos, consequentes, diretos
-ou indiretos.
-Privacidade e uso das informações enviadas; Publicidade: Qualquer informação
-que você enviar como parte do Sorteio será usada para os fins deste Sorteio e tratada
-de acordo com a Política de Privacidade do Patrocinador, conforme estabelecido
-nestas Regras Oficiais. Exceto quando proibido, a participação no Sorteio constitui o
-consentimento do participante para o uso pelo Patrocinador de seu nome, imagem,
-voz, opiniões, informações biográficas e estado de residência para fins promocionais
-em qualquer mídia sem pagamento ou consideração adicional.
-Uso das informações do participante: Ao participar do Sorteio, você reconhece e
-concorda que o Patrocinador e as empresas participantes RESIDUUM usarão as
-informações do participante, incluindo, sem limitação, seu endereço de e-mail, número
-de telefone, endereço de correspondência ou qualquer outra informação de contato
-fornecida para solicitação geral, marketing ou outras atividades comerciais ou
-promocionais relacionadas aos serviços e produtos fornecidos pelo Patrocinador ou
-pelas empresas participantes. Você pode, a qualquer momento, revogar o uso de tais
-informações, fornecendo notificação por escrito ao Patrocinador e a cada outra
-empresa participante usando os seguintes endereços ou respondendo a um e-mail de
-marketing usando o link de cancelamento de assinatura fornecido no e-mail. Observe
-que sua preferência de exclusão se aplicará à comunicação de marketing e pode não
-se aplicar à comunicação transacional, incluindo aquelas associadas à sua inscrição.
-Disputas: Exceto quando proibido, você concorda que todas e quaisquer disputas,
-reivindicações e causas de ação decorrentes ou relacionadas ao Sorteio ou a qualquer
-prêmio concedido serão resolvidas individualmente, sem recorrer a qualquer forma de
-ação coletiva e exclusivamente pelo tribunal apropriado localizado em Manaus,
-Amazonas. Todas as questões e questões relativas à construção, validade,
-interpretação e aplicabilidade destas Regras Oficiais, seus direitos e obrigações, ou os
-direitos e obrigações do Patrocinador em conexão com o Sorteio, serão regidos e
-interpretados de acordo com as leis do Brasil.
-Plataformas de terceiros: Se este Sorteio for hospedado, administrado ou operado
-em uma plataforma de terceiros, incluindo, sem limitação, uma plataforma de mídia
-social (p. g Facebook ou Twitter) (“Plataforma de Terceiros”), ao participar deste
-Sorteio, os participantes liberam e concordam em cumprir todas as regras e políticas
-estabelecidas por essa Plataforma de Terceiros e isentar essa Plataforma de Terceiros
-de toda e qualquer responsabilidade, perda ou danos decorrentes de ou relacionados
-à concessão, recebimento e/ou uso ou uso indevido de prêmios ou participação em
-quaisquer atividades relacionadas a prêmios. Salvo disposição em contrário nestas
-Regras Oficiais, este Sorteio não é patrocinado, endossado ou administrado por, ou
-associado a qualquer Plataforma de Terceiros.
-Ao participar deste sorteio, eu concordo expressamente com o uso do meu número de
-telefone pela empresa organizadora do sorteio para fins relacionados à campanha
-deste evento. Compreendo que meu número de telefone será utilizado para entrar em
-contato comigo, para fornecer informações sobre o prêmio e coordenar a entrega"
+    notificar o vencedor em potencial dentro de cinco (5) dias úteis após o sorteio por
+    e-mail/telefone. Se um vencedor em potencial não responder dentro de sete (7) dias
+    corridos após o envio do aviso, o Patrocinador selecionará um vencedor em potencial
+    alternativo em seu lugar aleatoriamente entre todas as inscrições restantes recebidas.
+    Apenas três (3) vencedores potenciais alternativos serão contatados.
+    Prêmio(s): XXXXXXXXXXXXXXXXXXXXXXXXX
+    Descrição dos prêmios: XXXXXXXXXXXXXXXXXX
+    Condições Gerais: Caso a operação, segurança ou administração do Sorteio seja
+    prejudicada de alguma forma por qualquer motivo, incluindo, entre outros, fraude, vírus
+    ou outro problema técnico, O Patrocinador pode, a seu exclusivo critério,: (a)
+    suspender o Sorteio para resolver a deficiência e, em seguida, retomar o Sorteio da
+    maneira que melhor se adequar ao espírito destas Regras Oficiais; ou (b) atribuir o(s)
+    prêmio(s) aleatoriamente entre as inscrições elegíveis recebidas até o momento da
+    deficiência. O Patrocinador reserva-se o direito, a seu exclusivo critério, de
+    desqualificar qualquer indivíduo que considere estar adulterando o processo de
+    inscrição ou a operação do Sorteio ou agindo em violação destas Regras Oficiais ou
+    de maneira antidesportiva ou perturbadora. Qualquer tentativa de qualquer pessoa de
+    prejudicar a operação legítima do Sorteio pode ser uma violação da lei criminal e civil
+    e, caso tal tentativa seja feita, o Patrocinador reserva-se o direito de buscar
+    indenização de tal pessoa na medida máxima permitida por lei. A falha do
+    Patrocinador em fazer cumprir qualquer termo destas Regras Oficiais não constituirá
+    uma renúncia a essa disposição. A prova de envio de qualquer comunicação ao
+    Patrocinador por correio não será considerada prova de recebimento dessa
+    comunicação pelo Patrocinador. No caso de uma disputa sobre qualquer entrada
+    online, o titular da conta autorizada do endereço de e-mail usado para entrar será
+    considerado o participante. O “titular autorizado da conta” é a pessoa física a quem é
+    atribuído um endereço de e-mail por um provedor de acesso à Internet, provedor de
+    serviços online ou outra organização responsável pela atribuição de endereços de
+    e-mail para o domínio associado ao endereço de e-mail enviado.
+    Liberação e Limitações de Responsabilidade: Ao participar do Sorteio, você
+    concorda em isentar e isentar o Patrocinador, sua controladora, subsidiárias, afiliadas,
+    os provedores de prêmios e cada um de seus respectivos executivos, diretores,
+    funcionários , e agentes (as “Partes Liberadas”) de e contra qualquer reivindicação ou
+    causa de ação decorrente da participação no Sorteio ou recebimento ou uso de
+    qualquer prêmio, incluindo, mas não limitado a: (a) intervenção humana não
+    autorizada no Sorteio; (b) erros técnicos relacionados a computadores, servidores,
+    provedores ou linhas telefônicas ou de rede; (c) erros de impressão; (d)
+    correspondência perdida, atrasada, com postagem vencida, extraviada ou impossível
+    de entregar; (e) erros na administração do Sorteio ou no processamento das
+    inscrições; ou (f) lesões ou danos a pessoas ou bens que possam ser causados, direta
+    ou indiretamente, no todo ou em parte, pela participação do participante no Sorteio ou
+    pelo recebimento ou uso de qualquer prêmio. Você também concorda que, em
+    qualquer causa de ação, a responsabilidade das Partes Isentas será limitada ao custo
+    de inscrição e participação no Sorteio e, em nenhum caso, as Partes Isentas serão
+    responsáveis por honorários advocatícios. Você renuncia ao direito de reivindicar
+    quaisquer danos, incluindo, mas não limitado a danos punitivos, consequentes, diretos
+    ou indiretos.
+    Privacidade e uso das informações enviadas; Publicidade: Qualquer informação
+    que você enviar como parte do Sorteio será usada para os fins deste Sorteio e tratada
+    de acordo com a Política de Privacidade do Patrocinador, conforme estabelecido
+    nestas Regras Oficiais. Exceto quando proibido, a participação no Sorteio constitui o
+    consentimento do participante para o uso pelo Patrocinador de seu nome, imagem,
+    voz, opiniões, informações biográficas e estado de residência para fins promocionais
+    em qualquer mídia sem pagamento ou consideração adicional.
+    Uso das informações do participante: Ao participar do Sorteio, você reconhece e
+    concorda que o Patrocinador e as empresas participantes RESIDUUM usarão as
+    informações do participante, incluindo, sem limitação, seu endereço de e-mail, número
+    de telefone, endereço de correspondência ou qualquer outra informação de contato
+    fornecida para solicitação geral, marketing ou outras atividades comerciais ou
+    promocionais relacionadas aos serviços e produtos fornecidos pelo Patrocinador ou
+    pelas empresas participantes. Você pode, a qualquer momento, revogar o uso de tais
+    informações, fornecendo notificação por escrito ao Patrocinador e a cada outra
+    empresa participante usando os seguintes endereços ou respondendo a um e-mail de
+    marketing usando o link de cancelamento de assinatura fornecido no e-mail. Observe
+    que sua preferência de exclusão se aplicará à comunicação de marketing e pode não
+    se aplicar à comunicação transacional, incluindo aquelas associadas à sua inscrição.
+    Disputas: Exceto quando proibido, você concorda que todas e quaisquer disputas,
+    reivindicações e causas de ação decorrentes ou relacionadas ao Sorteio ou a qualquer
+    prêmio concedido serão resolvidas individualmente, sem recorrer a qualquer forma de
+    ação coletiva e exclusivamente pelo tribunal apropriado localizado em Manaus,
+    Amazonas. Todas as questões e questões relativas à construção, validade,
+    interpretação e aplicabilidade destas Regras Oficiais, seus direitos e obrigações, ou os
+    direitos e obrigações do Patrocinador em conexão com o Sorteio, serão regidos e
+    interpretados de acordo com as leis do Brasil.
+    Plataformas de terceiros: Se este Sorteio for hospedado, administrado ou operado
+    em uma plataforma de terceiros, incluindo, sem limitação, uma plataforma de mídia
+    social (p. g Facebook ou Twitter) (“Plataforma de Terceiros”), ao participar deste
+    Sorteio, os participantes liberam e concordam em cumprir todas as regras e políticas
+    estabelecidas por essa Plataforma de Terceiros e isentar essa Plataforma de Terceiros
+    de toda e qualquer responsabilidade, perda ou danos decorrentes de ou relacionados
+    à concessão, recebimento e/ou uso ou uso indevido de prêmios ou participação em
+    quaisquer atividades relacionadas a prêmios. Salvo disposição em contrário nestas
+    Regras Oficiais, este Sorteio não é patrocinado, endossado ou administrado por, ou
+    associado a qualquer Plataforma de Terceiros.
+    Ao participar deste sorteio, eu concordo expressamente com o uso do meu número de
+    telefone pela empresa organizadora do sorteio para fins relacionados à campanha
+    deste evento. Compreendo que meu número de telefone será utilizado para entrar em
+    contato comigo, para fornecer informações sobre o prêmio e coordenar a entrega"
           defaultValue={""}
           disabled
         />

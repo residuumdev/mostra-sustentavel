@@ -34,14 +34,21 @@ export default function Component() {
     },[]);
   
   function HandleForm (data: Inputs) {
+    const values = Object.values(data);
+    const isZero = values.every((value) => !value)
+    const isAbove10 = values.some((value) => value > 10)
+
+    if(isAbove10) {
+      toast.error("A quantidade máxima por descarte é de 10 unidades")
+      return
+    }
+    if (isZero) {
+      toast.error("Insira pelo menos uma quantidade a ser reciclada")
+      return
+    } 
     if(typeof window !== 'undefined'){
-      if(!data.papel && !data.metal && !data.plastico && !data.vidro) {
-        console.log("")
-        toast.error("Insira pelo menos um item para ser reciclado")   
-      } else {
         localStorage.setItem("dados_descarte", JSON.stringify(data));
         router.push("/ponto-coleta/termos")
-      }
     }
   }
 
@@ -50,7 +57,7 @@ export default function Component() {
 <div className="">
   <div className="py-4 px-10">
     <div>
-      Para realizar o descarte, insira seu número de telefone no primeiro campo e após informe os resíduos que está descartando, clicando nos botões dos respectivos resíduos que você tiver para descartar. (Texto será alterado).
+    Agora informe o tipo de resíduo e a quantidade que você quer descartar.
     </div>
   </div>
   <form className="px-10" onSubmit={handleSubmit(HandleForm)}>
@@ -63,14 +70,7 @@ export default function Component() {
     className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-blue-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
     placeholder=" "
     inputMode="numeric"
-    {...register('papel', {
-      min: 0,
-      max: 10,
-      pattern: {
-        value: /^[1-9]+$/,
-        message: 'Please enter a number',
-      },
-    })}
+    {...register('papel', {})}
   />
   <label
     htmlFor="floating_outlined"
@@ -89,14 +89,7 @@ export default function Component() {
     className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-yellow-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-yellow-200 peer"
     placeholder=" "
     inputMode="numeric"
-    {...register('metal', {
-      min: 0,
-      max: 10,
-      pattern: {
-        value: /^[1-9]+$/,
-        message: 'Please enter a number',
-      },
-    })}
+    {...register('metal', {})}
   />
   <label
     htmlFor="floating_outlined"
@@ -115,14 +108,7 @@ export default function Component() {
     className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-green-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-200 peer"
     placeholder=" "
     inputMode="numeric"
-    {...register('vidro', {
-      min: 0,
-      max: 10,
-      pattern: {
-        value: /^[1-9]+$/,
-        message: 'Please enter a number',
-      },
-    })}
+    {...register('vidro', {})}
   />
   <label
     htmlFor="floating_outlined"
@@ -141,14 +127,7 @@ export default function Component() {
     className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-red-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-500 focus:outline-none focus:ring-0 focus:border-red-600 peer"
     placeholder=" "
     inputMode="numeric"
-    {...register('plastico', {
-      min: 0,
-      max: 10,
-      pattern: {
-        value: /^[1-9]+$/,
-        message: 'Please enter a number',
-      },
-    })}
+    {...register('plastico', {})}
   />
   <label
     htmlFor="floating_outlined"
