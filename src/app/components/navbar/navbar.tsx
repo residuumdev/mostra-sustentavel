@@ -17,7 +17,7 @@ export const DashboardNavbar: FC<Record<string, never>> = function () {
       {/* Barra de navegação superior */}
       <Navbar
         fluid
-        className="fixed top-0 z-30 w-full border-b border-gray-200 bg-white p-0 dark:border-gray-700 dark:bg-[#002266] sm:p-0"
+        className="fixed top-0 z-30 w-full border-b border-gray-200 bg-white p-0  sm:p-0"
       >
         {/* Conteúdo da barra de navegação */}
         <div className="w-full p-3 pr-4">
@@ -28,7 +28,7 @@ export const DashboardNavbar: FC<Record<string, never>> = function () {
               <button
                 aria-controls="sidebar"
                 aria-expanded
-                className="mr-2 cursor-pointer rounded p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100 dark:text-gray-400 dark:hover:bg-[#002266] dark:hover:text-white dark:focus:bg-[#002266] dark:focus:ring-[#002266]"
+                className="mr-2 cursor-pointer rounded p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100"
                 onClick={() => setSidebarCollapsed(!isSidebarCollapsed)}
               >
                 {/* Ícone da barra lateral */}

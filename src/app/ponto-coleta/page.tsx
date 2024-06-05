@@ -42,7 +42,7 @@ export default function HomeComponent() {
         <div className="p-4 sm:col-span-2">
           <label
             htmlFor="telefone"
-            className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+            className="mb-2 block text-sm font-medium text-gray-900 "
           >
             Telefone
           </label>
@@ -54,11 +54,11 @@ export default function HomeComponent() {
             type="number"
             name="telefone"
             id="telefone"
-            className="focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+            className="focus:ring-primary-600 focus:border-primary-600    block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900"
           />
         </div>
         {errors.telefone && errors.telefone.type === "required" && (
-          <p className="mt-2 text-sm text-red-600 dark:text-red-500">
+          <p className="mt-2 text-sm text-red-600 ">
             <span className="font-medium">Por favor</span> Insira um número de
             telefone
           </p>

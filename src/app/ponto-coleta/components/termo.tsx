@@ -5,7 +5,7 @@ export default function Termo() {
         <textarea
           id="message"
           rows={10}
-          className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+          className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500"
           placeholder="Ao participar desse Sorteio, eu aceito os termos e condições estabelecidos nestas
       Regras Oficiais. Confirmo que tenho pelo menos 18 anos e atingir a maioridade na
       minha jurisdição de residência no momento da inscrição. Ao participar dos sorteios,

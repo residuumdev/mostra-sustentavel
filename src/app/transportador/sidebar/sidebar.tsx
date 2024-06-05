@@ -22,7 +22,7 @@ export const DashboardSidebar: FC = function () {
         collapsed={isCollapsed}
         id="sidebar"
         className={twMerge(
-          "fixed inset-y-0 left-0 z-20 mt-16 flex h-full shrink-0 flex-col border-r border-gray-200 dark:bg-[#002266] lg:flex",
+          "fixed inset-y-0 left-0 z-20 mt-16 flex h-full shrink-0 flex-col border-r border-gray-200 lg:flex",
           isCollapsed && "hidden w-16",
         )}
       >
