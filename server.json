@@ -11,6 +11,54 @@
       },
       "aceitou_termos": "true",
       "ponto_coleta_id": 1
+    },
+    {
+      "id": "a9cb",
+      "dados_descartante": "1",
+      "dados_descarte": {
+        "papel": "2",
+        "metal": "2",
+        "vidro": "2",
+        "plastico": "2"
+      },
+      "aceitou_termos": "true",
+      "ponto_coleta_id": 1
+    },
+    {
+      "id": "85c5",
+      "dados_descartante": "2",
+      "dados_descarte": {
+        "papel": "",
+        "metal": "1",
+        "vidro": "",
+        "plastico": ""
+      },
+      "aceitou_termos": "false",
+      "ponto_coleta_id": 1
+    },
+    {
+      "id": "36d0",
+      "dados_descartante": "1",
+      "dados_descarte": {
+        "papel": "2",
+        "metal": "2",
+        "vidro": "2",
+        "plastico": "2"
+      },
+      "aceitou_termos": "true",
+      "ponto_coleta_id": 1
+    },
+    {
+      "id": "c319",
+      "dados_descartante": "2",
+      "dados_descarte": {
+        "papel": "2",
+        "metal": "2",
+        "vidro": "2",
+        "plastico": "2"
+      },
+      "aceitou_termos": "true",
+      "ponto_coleta_id": 1
     }
   ]
 }

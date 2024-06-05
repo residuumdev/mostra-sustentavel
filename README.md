@@ -40,4 +40,4 @@ Sempre que você subir um commit, use commit semântico, exemplos:
 - test: Usado quando adicionar testes ausentes ou corrigir testes existentes.
 - revert: Usado quando você reverte um commit anterior.
 
-teste
+deploy

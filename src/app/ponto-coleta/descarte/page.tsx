@@ -40,94 +40,105 @@ export default function Component() {
   };
 
   return (
-    <>
-      <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
-        Agora informe o tipo de resíduo e a quantidade que você quer descartar
+    <div className="">
+      <div className="px-10 py-4">
+        <div>
+          Agora informe o tipo de resíduo e a quantidade que você quer
+          descartar.
+        </div>
       </div>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="p-4 sm:col-span-2">
-          <label
-            htmlFor="papel"
-            className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-          >
-            Papel (kg)
-          </label>
-          <input
-            {...register("papel")}
-            type="number"
-            name="papel"
-            id="papel"
-            className="focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-          />
-          {errors.papel && (
-            <span className="text-red-600">Esse campo é obrigatório</span>
-          )}
+      <form className="px-10" onSubmit={handleSubmit(onSubmit)}>
+        <div className="mb-5">
+          <div className="relative">
+            <input
+              type="number"
+              id="papel"
+              className="peer block w-full appearance-none rounded-lg border-2 border-blue-300 bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-blue-500"
+              placeholder=""
+              inputMode="numeric"
+              {...register("papel", {})}
+            />
+            <label
+              htmlFor="papel"
+              className="absolute start-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-blue-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-blue-600 dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+            >
+              Papel
+            </label>
+          </div>
         </div>
 
-        <div className="p-4 sm:col-span-2">
-          <label
-            htmlFor="metal"
-            className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-          >
-            Metal (kg)
-          </label>
-          <input
-            {...register("metal")}
-            type="number"
-            name="metal"
-            id="metal"
-            className="focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-          />
-          {errors.metal && (
-            <span className="text-red-600">Esse campo é obrigatório</span>
-          )}
+        <div className="mb-5">
+          <div className="relative">
+            <input
+              type="number"
+              id="metal"
+              className="peer block w-full appearance-none rounded-lg border-2 border-yellow-300 bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-yellow-200 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-blue-500"
+              placeholder=""
+              inputMode="numeric"
+              {...register("metal", {})}
+            />
+            <label
+              htmlFor="metal"
+              className="absolute start-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-yellow-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-yellow-600 dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-yellow-500 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+            >
+              Metal
+            </label>
+          </div>
         </div>
 
-        <div className="p-4 sm:col-span-2">
-          <label
-            htmlFor="vidro"
-            className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-          >
-            Vidro (kg)
-          </label>
-          <input
-            {...register("vidro")}
-            type="number"
-            name="vidro"
-            id="vidro"
-            className="focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-          />
-          {errors.vidro && (
-            <span className="text-red-600">Esse campo é obrigatório</span>
-          )}
+        <div className="mb-5">
+          <div className="relative">
+            <input
+              type="number"
+              id="vidro"
+              className="peer block w-full appearance-none rounded-lg border-2 border-green-300 bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-green-200 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-green-500"
+              placeholder=""
+              inputMode="numeric"
+              {...register("vidro", {})}
+            />
+            <label
+              htmlFor="vidro"
+              className="absolute start-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-green-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-green-600 dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-green-500 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+            >
+              Vidro
+            </label>
+          </div>
         </div>
 
-        <div className="p-4 sm:col-span-2">
-          <label
-            htmlFor="plastico"
-            className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-          >
-            Plástico (kg)
-          </label>
-          <input
-            {...register("plastico")}
-            type="number"
-            name="plastico"
-            id="plastico"
-            className="focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-          />
-          {errors.plastico && (
-            <span className="text-red-600">Esse campo é obrigatório</span>
-          )}
+        <div className="mb-5">
+          <div className="relative">
+            <input
+              type="number"
+              id="plastico"
+              className="peer block w-full appearance-none rounded-lg border-2 border-red-300 bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-red-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-red-500"
+              placeholder=""
+              inputMode="numeric"
+              {...register("plastico", {})}
+            />
+            <label
+              htmlFor="plastico"
+              className="absolute start-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-red-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-red-600 dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-red-500 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+            >
+              Plástico
+            </label>
+          </div>
         </div>
-
-        <button
-          type="submit"
-          className="group relative mb-8 mt-4 flex w-full justify-center rounded-md border border-transparent bg-[#64a23d] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
-        >
-          Informar resíduos
-        </button>
+        <div className="grid grid-cols-2 content-start gap-4 px-4 py-4">
+          <button
+            onClick={() => reset()}
+            type="reset"
+            className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#5E5E64] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
+          >
+            Limpar
+          </button>
+          <button
+            type="submit"
+            className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#64a23d] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
+          >
+            Continuar
+          </button>
+        </div>
       </form>
-    </>
+    </div>
   );
 }

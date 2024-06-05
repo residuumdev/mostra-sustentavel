@@ -32,28 +32,24 @@ export default function TermosPonto() {
   return (
     <>
       <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
-        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">
-          Termos e Condições
-        </h2>
-        <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
-          Precisamos da sua autorização para entrar em contato com você, por
-          favor leia o termo de consentimento e as regras da campanha
-        </div>
-        <Termo />
-        <div className="mt-4 flex justify-end space-x-4">
-          <button
-            onClick={nextPage}
-            className="group relative mb-8 mt-4 flex w-full justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-offset-2"
-          >
-            Não Aceitar
-          </button>
-          <button
-            onClick={saveTerms}
-            className="group relative mb-8 mt-4 flex w-full justify-center rounded-md border border-transparent bg-[#64a23d] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
-          >
-            Aceitar
-          </button>
-        </div>
+        Precisamos da sua autorização para entrar em contato com você, por favor
+        leia o termo de consentimento e as regras da campanha.
+      </div>
+      <Termo />
+
+      <div className="grid grid-cols-2 content-start gap-4 px-4 py-4">
+        <button
+          onClick={nextPage}
+          className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#5E5E64] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
+        >
+          Não Aceitar
+        </button>
+        <button
+          onClick={saveTerms}
+          className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#64a23d] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
+        >
+          Aceito
+        </button>
       </div>
     </>
   );

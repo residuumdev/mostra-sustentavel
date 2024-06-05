@@ -3,10 +3,7 @@ export default function PontoHeader() {
     <header>
       <nav className="border-gray-200 bg-ponto px-4 py-2.5 dark:bg-gray-800 lg:px-6">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-center p-4">
-          <img
-            src="/images/logos/logo-residuum-texto-branco.png"
-            alt="logo residuum"
-          />
+          <img src="/images/logos/logo-residuum.png" alt="logo residuum" />
         </div>
       </nav>
     </header>

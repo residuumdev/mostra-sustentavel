@@ -96,7 +96,7 @@ const DropdownUser = () => {
 
         {/* Ícone de seta para baixo (visível apenas em telas menores) */}
         <svg
-          className="hidden fill-current sm:block"
+          className="fill-current hidden sm:block"
           width={12}
           height={8}
           viewBox="0 0 12 8"

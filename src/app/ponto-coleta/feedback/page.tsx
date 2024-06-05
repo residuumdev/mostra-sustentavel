@@ -25,7 +25,7 @@ export default function Feedback() {
       telefone: telefoneParsed,
       ...dadosParsed,
       aceitou_termos: termosParsed,
-      Created: 'x-sheetmonkey-current-date-time'
+      Created: "x-sheetmonkey-current-date-time",
     };
 
     axios
@@ -35,8 +35,8 @@ export default function Feedback() {
           localStorage.clear();
           setMessage(
             termosParsed
-              ? "Obrigado por aceitar os termos e realizar o descarte de resíduos!"
-              : "Você não aceitou os termos, mas seus dados de descarte foram registrados.",
+              ? "Você está concorrendo e desejamos boa sorte! Se você for o vencedor, a nossa equipe entrará em contato com você pelo número de telefone que você cadastrou."
+              : "Você destinou seu resíduo de forma correta!",
           );
         } else {
           setMessage(
@@ -51,34 +51,25 @@ export default function Feedback() {
       });
   }, [router]);
 
-  const returnHome = () => {
-    router.push("/ponto-coleta");
-  };
-
   return (
-    <>
-      <form
-        action="https://api.sheetmonkey.io/form/vB1pUYCBvUqnSarEvAgsd6"
-        method="post"
-      >
-        <input
-          type="hidden"
-          name="Created"
-          value="x-sheetmonkey-current-date-time"
+    <div className="max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
+      <a href="#">
+        <img
+          className="rounded-t-lg"
+          src="/docs/images/blog/image-1.jpg"
+          alt=""
         />
-      </form>
-
-      <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
-        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+      </a>
+      <div className="p-5">
+        <a href="#">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Parabéns!
+          </h5>
+        </a>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {message}
-        </h2>
-        <button
-          onClick={returnHome}
-          className="group relative mb-8 mt-4 flex w-full justify-center rounded-md border border-transparent bg-[#64a23d] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
-        >
-          Voltar ao início
-        </button>
+        </p>
       </div>
-    </>
+    </div>
   );
 }

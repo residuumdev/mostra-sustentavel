@@ -7,46 +7,46 @@ export default function Termo() {
           rows={10}
           className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
           placeholder="Ao participar desse Sorteio, eu aceito os termos e condições estabelecidos nestas
-          Regras Oficiais. Confirmo que tenho pelo menos 18 anos e atingir a maioridade na
-          minha jurisdição de residência no momento da inscrição. Ao participar dos sorteios,
-          concordo em me inscrever para receber newsletters e ofertas especiais da
-          RESIDUUM. A RESIDUUM é patrocinadora dos sorteios e responsável pela operação
-          dos sorteios. Nenhuma compra necessária. Uma compra não aumentará suas
-          chances de vitória. O sorteio está sujeito às leis e regulamentos federais, estaduais,
-          municipais e locais e é nulo onde for proibido.
-          Elegibilidade: Sorteio da Campanha “Descarte corretamente e ganhe!” (o
-          “Sorteio”) está aberto a qualquer pessoa que tenha pelo menos dezoito (18) anos de
-          idade e mora no Estado do Amazonas, cidade de Manaus e tem um número de
-          telefone/e-mail válido. Funcionários, contratados independentes, estagiários,
-          executivos, diretores e agentes do Patrocinador e das empresas associadas não são
-          elegíveis para participar.
-          Patrocinador: O Sorteio é patrocinado pela RESIDUUM em parceria com
-          XXXXXXXXXXXXX.
-          Concordo com as Regras Oficiais: Ao participar do Sorteio, você indica sua
-          concordância total e incondicional e aceitação de (a) estas Regras Oficiais e (b) as
-          decisões do Patrocinador, que são finais e vinculativas. Ganhar um prêmio depende
-          do cumprimento de todos os requisitos aqui estabelecidos.
-          Período de Inscrição: O Sorteio começa XXXXXXXXXXXX (“Período de Inscrição”).
-          As inscrições enviadas antes ou depois do Período de Inscrição não serão elegíveis. O
-          computador do Patrocinador é o dispositivo de cronometragem oficial do sorteio. O
-          Sorteio terminará no dia XXXXXXXXXX.
-          Como participar: No início do período de inscrição, você pode participar do Sorteio
-          visitando um dos pontos de coleta oficial da RESIDUUM e descartando seu resíduo
-          reciclável/compostável. O número de inscrições é ilimitado por pessoa/endereço de
-          e-mail. O uso de uma agência ou qualquer sistema automatizado para participar é
-          estritamente proibido e o Patrocinador se reserva o direito de desqualificar quaisquer
-          inscrições recebidas por tais métodos, conforme determinado pelo Patrocinador, a seu
-          exclusivo critério.
-          Ao participar do Sorteio de acordo com o processo de inscrição descrito acima, você
-          estará se registrando para receber comunicações por e-mail/telefone da RESIDUUM e
-          concorda que seu registro e qualquer outra informação coletada em conexão com o
-          Sorteio podem ser usados pela RESIDUUM de acordo com sua Política de
-          Privacidade, cuja cópia atual pode ser encontrada
-          aqui XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-          Sorteio: Após o Período de Inscrição, o Patrocinador selecionará o(s) possível(is)
-          vencedor(es) em um sorteio aleatório de todas as inscrições recebidas. As chances de
-          ser selecionado dependem do número de entradas recebidas.
-          Notificação e Requisitos de Vencedores em Potencial: o Patrocinador tentará
+      Regras Oficiais. Confirmo que tenho pelo menos 18 anos e atingir a maioridade na
+      minha jurisdição de residência no momento da inscrição. Ao participar dos sorteios,
+      concordo em me inscrever para receber newsletters e ofertas especiais da
+      RESIDUUM. A RESIDUUM é patrocinadora dos sorteios e responsável pela operação
+      dos sorteios. Nenhuma compra necessária. Uma compra não aumentará suas
+      chances de vitória. O sorteio está sujeito às leis e regulamentos federais, estaduais,
+      municipais e locais e é nulo onde for proibido.
+      Elegibilidade: Sorteio da Campanha “Descarte corretamente e ganhe!” (o
+      “Sorteio”) está aberto a qualquer pessoa que tenha pelo menos dezoito (18) anos de
+      idade e mora no Estado do Amazonas, cidade de Manaus e tem um número de
+      telefone/e-mail válido. Funcionários, contratados independentes, estagiários,
+      executivos, diretores e agentes do Patrocinador e das empresas associadas não são
+      elegíveis para participar.
+      Patrocinador: O Sorteio é patrocinado pela RESIDUUM em parceria com
+      XXXXXXXXXXXXX.
+      Concordo com as Regras Oficiais: Ao participar do Sorteio, você indica sua
+      concordância total e incondicional e aceitação de (a) estas Regras Oficiais e (b) as
+      decisões do Patrocinador, que são finais e vinculativas. Ganhar um prêmio depende
+      do cumprimento de todos os requisitos aqui estabelecidos.
+      Período de Inscrição: O Sorteio começa XXXXXXXXXXXX (“Período de Inscrição”).
+      As inscrições enviadas antes ou depois do Período de Inscrição não serão elegíveis. O
+      computador do Patrocinador é o dispositivo de cronometragem oficial do sorteio. O
+      Sorteio terminará no dia XXXXXXXXXX.
+      Como participar: No início do período de inscrição, você pode participar do Sorteio
+      visitando um dos pontos de coleta oficial da RESIDUUM e descartando seu resíduo
+      reciclável/compostável. O número de inscrições é ilimitado por pessoa/endereço de
+      e-mail. O uso de uma agência ou qualquer sistema automatizado para participar é
+      estritamente proibido e o Patrocinador se reserva o direito de desqualificar quaisquer
+      inscrições recebidas por tais métodos, conforme determinado pelo Patrocinador, a seu
+      exclusivo critério.
+      Ao participar do Sorteio de acordo com o processo de inscrição descrito acima, você
+      estará se registrando para receber comunicações por e-mail/telefone da RESIDUUM e
+      concorda que seu registro e qualquer outra informação coletada em conexão com o
+      Sorteio podem ser usados pela RESIDUUM de acordo com sua Política de
+      Privacidade, cuja cópia atual pode ser encontrada
+      aqui XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+      Sorteio: Após o Período de Inscrição, o Patrocinador selecionará o(s) possível(is)
+      vencedor(es) em um sorteio aleatório de todas as inscrições recebidas. As chances de
+      ser selecionado dependem do número de entradas recebidas.
+      Notificação e Requisitos de Vencedores em Potencial: o Patrocinador tentará
 notificar o vencedor em potencial dentro de cinco (5) dias úteis após o sorteio por
 e-mail/telefone. Se um vencedor em potencial não responder dentro de sete (7) dias
 corridos após o envio do aviso, o Patrocinador selecionará um vencedor em potencial

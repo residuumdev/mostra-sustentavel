@@ -32,7 +32,6 @@ export default function HomeComponent() {
     }
     return "";
   }
-
   return (
     <>
       <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
@@ -48,23 +47,32 @@ export default function HomeComponent() {
             Telefone
           </label>
           <input
-            {...register("telefone", { required: true })}
-            defaultValue={getData()}
-            type="text"
+            {...register("telefone", {
+              value: getData(),
+            })}
+            inputMode="numeric"
+            type="number"
             name="telefone"
             id="telefone"
             className="focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
           />
-          {errors.telefone && (
-            <span className="text-red-600">Esse campo é obrigatório</span>
-          )}
         </div>
-        <button
-          type="submit"
-          className="group relative mb-8 mt-4 flex w-1/2 justify-center rounded-md border border-transparent bg-[#64a23d] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
-        >
-          Continuar
-        </button>
+        {errors.telefone && errors.telefone.type === "required" && (
+          <p className="mt-2 text-sm text-red-600 dark:text-red-500">
+            <span className="font-medium">Por favor</span> Insira um número de
+            telefone
+          </p>
+        )}
+        <div className="p-4">
+          <label></label>
+          <button
+            type="submit"
+            //  className="mt-4 w-full rounded-md bg-[#002266] py-2 font-bold text-white hover:bg-[#64a23d]"
+            className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#64a23d] px-4 py-2 text-sm font-medium text-white hover:bg-[#002266] focus:outline-none focus:ring-2 focus:ring-[#002266] focus:ring-offset-2"
+          >
+            Continuar
+          </button>
+        </div>
       </form>
     </>
   );
