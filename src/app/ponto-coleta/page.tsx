@@ -34,7 +34,7 @@ export default function HomeComponent() {
   }
   return (
     <>
-      <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
+      <div className="m-auto max-w-2xl px-4 py-8 lg:py-16">
         Para participar da campanha, insira seu número de telefone para que
         possamos entrar em contato caso você seja o sorteado(a).
       </div>
