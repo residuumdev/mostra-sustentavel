@@ -1,14 +1,11 @@
 "use client";
-
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Termo from "../components/termo";
 
-type Inputs = {
-  telefone: string;
-};
-
 export default function TermosPonto() {
+  const router = useRouter();
+
   useEffect(() => {
     // check dados tela anterior
     const currentStep = localStorage.getItem("dados_descarte");
@@ -16,23 +13,21 @@ export default function TermosPonto() {
       router.replace("/ponto-coleta");
       return;
     }
-  }, []);
+  }, [router]);
 
-  const router = useRouter();
-  function saveTerms() {
+  const saveTerms = () => {
     if (typeof window !== "undefined") {
       localStorage.setItem("aceitou_termos", "true");
       router.replace("/ponto-coleta/feedback");
     }
-  }
+  };
 
-  function nextPage() {
+  const nextPage = () => {
     if (typeof window !== "undefined") {
-      // now access your localStorage
       localStorage.setItem("aceitou_termos", "false");
       router.push("/ponto-coleta/feedback");
     }
-  }
+  };
 
   return (
     <>
