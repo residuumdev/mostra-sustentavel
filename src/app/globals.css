@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "@sweetalert2/theme-material-ui/material-ui.css";
-
 :root {
   /* Paleta Residuum */
   --cor-azul: #002266;

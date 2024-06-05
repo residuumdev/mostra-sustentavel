@@ -2,7 +2,6 @@
 import { FormEvent, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import Swal from "sweetalert2";
 import { IoFingerPrintOutline } from "react-icons/io5";
 import { HiLockClosed } from "react-icons/hi2";
 
@@ -56,23 +55,23 @@ export default function LoginPage() {
       console.log("Response Code:", code);
 
       if (code === 200) {
-        Swal.fire("sucesso");
+        alert("sucesso");
         router.push("/admnistrador");
         localStorage.setItem("nome_usuario", JSON.stringify(nome_usuario));
         localStorage.setItem("token", JSON.stringify(token));
       } else {
         const errorMessage = errorMessages[code] || errorMessages.default;
-        Swal.fire(errorMessage);
+        alert(errorMessage);
         setError(errorMessage);
       }
     } catch (err: any) {
       if (err.response.status === 403) {
         const errorMessage = errorMessages[403] || errorMessages.default;
-        Swal.fire(errorMessage);
+        alert(errorMessage);
         setError(errorMessage);
       } else if (err.response.status === 401) {
         const errorMessage = errorMessages[401] || errorMessages.default;
-        Swal.fire(errorMessage);
+        alert(errorMessage);
         setError(errorMessage);
       } else {
         console.error("Error:", err);
